@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link rel="stylesheet" href="vote.css">
+   
+    <link rel="icon" href="vote.png">
+</head>
+<body>
+
+<h1>Election Voting System</h1>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left-columen">
+
+        <button onclick="vote('A')" class="btn">Party A</button>
+        <button onclick="vote('B')" class="btn">Party B</button>
+        <button onclick="vote('C')" class="btn">Party C</button>
+        <button onclick="vote('D')" class="btn">Party D</button>
+        <button onclick="vote('E')" class="btn">Party E</button>
+
+        <br><br>
+
+        <!-- ACTION BUTTONS -->
+        <button onclick="deleteLastVote()" class="btn" style="background:rgb(212, 181, 181);">
+            Delete Last Vote
+        </button>
+
+        <button onclick="resetVotes()" class="btn" style="background:rgb(60, 189, 135);">
+            Reset All Votes
+        </button>
+
+        <!-- HISTORY -->
+        <div class="vote">
+            <h2>Voting History</h2>
+            <p></p>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-columen">
+        <h1>Result</h1>
+        <p>Party A: 0</p>
+        <p>Party B: 0</p>
+        <p>Party C: 0</p>
+        <p>Party D: 0</p>
+        <p>Party E: 0</p>
+    </div>
+
+</div>
+
+<script src="vote.js"></script>
+
+</body>
+</html>
